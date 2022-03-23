@@ -25,7 +25,7 @@ async function getData() {
 
     }
 }
-async function getData() {
+async function getData2() {
     try {
         await fetch('')
     } catch (error) {
