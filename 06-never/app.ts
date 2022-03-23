@@ -9,9 +9,11 @@ const dumpError = (): never => {
     }
 }
 
+/*
 const rec = (): never => {
     rec();
 }
+ */
 
 type paymentAction = 'refund' | 'checkout' | 'reject';
 
@@ -28,7 +30,7 @@ const processAction = (action: paymentAction) => {
             throw new Error('No action');
     }
 }
-
+/*
 const isString = (x: string | number): boolean => {
     if (typeof x === 'string') {
         return true;
@@ -37,3 +39,5 @@ const isString = (x: string | number): boolean => {
     }
     generateError('Some Message'); //Function return NEVER!!!
 }
+
+ */
