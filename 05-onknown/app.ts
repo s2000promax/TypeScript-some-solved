@@ -1,4 +1,4 @@
-//Onknown
+//Unknown
 let input: unknown;
 
 input= 3;
