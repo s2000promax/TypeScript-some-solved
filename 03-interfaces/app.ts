@@ -33,3 +33,36 @@ interface UserDictionary {
 type UserDictionary2 = {
     [index: string]: User
 }
+
+//Optional
+interface UserAuth {
+    login: string;
+    password?: string;
+}
+
+const userAuth: UserAuth = {
+    login: 'someLogin',
+    //password: ''
+}
+
+const multiply = (first: number, second?: number) => {
+if (!second) {
+    return first * first;
+}
+    return first * second;
+}
+
+interface UserPro {
+    login: string;
+    password?: {
+        type: 'primary' | 'secondary'
+    }
+}
+
+const testPass = (user: UserPro) => {
+const t = user.password?.type;
+}
+
+const test = (param?: string) => {
+    const t = param ?? multiply(5)
+}
