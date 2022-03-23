@@ -54,4 +54,29 @@ let a: 'someConst' = 'someConst';
 // a = 'asdf';
 
 let method = 'post';
-fetchWithAuth('someUrl', method as 'post')
+fetchWithAuth('someUrl', method as 'post');
+
+//Type Aliases
+type httpMethod = 'get' | 'post';
+
+const fetchWithAuth2 = (url: string, method: httpMethod) => {
+}
+
+type User = {
+    name: string,
+    age: number,
+    skills: string[]
+}
+
+type Role = {
+    id: number
+}
+
+type UserWithRole = User & Role;
+
+const user : UserWithRole = {
+    name: 'UserName',
+    age: 54,
+    skills: ['js', 'next'],
+    id: 12
+}
