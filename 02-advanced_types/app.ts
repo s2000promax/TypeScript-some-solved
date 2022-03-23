@@ -38,3 +38,20 @@ const logMultipleIds = (a: string | number, b: string | boolean) => {
         console.log(a, b);
     }
 }
+
+//Literal types
+/*
+enum RequestType {
+    GET = 'get',
+    POST = 'post'
+}
+ */
+const fetchWithAuth = (url: string, method: 'get' | 'post') => {
+}
+fetchWithAuth('someUrl', 'post');
+
+let a: 'someConst' = 'someConst';
+// a = 'asdf';
+
+let method = 'post';
+fetchWithAuth('someUrl', method as 'post')
