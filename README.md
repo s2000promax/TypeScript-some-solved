@@ -1,4 +1,4 @@
 # typeScript commands:
 
-## install: nmp install typescript
+## install: npm install typescript
 ## init: tsc --init
